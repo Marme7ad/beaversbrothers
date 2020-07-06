@@ -16,7 +16,7 @@
     "formik": "2.1.4",
     "hammerjs": "^2.0.8",
     "isomorphic-unfetch": "3.0.0",
-    "next": "9.3.0",
+    "next": "9.3.2",
     "react": "16.13.0",
     "react-dom": "16.13.0",
     "react-fetch-hook": "1.8.0",
