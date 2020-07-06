@@ -1,0 +1,15 @@
+<svg viewBox="0 0 206 154" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+	<rect width="206" height="154" fill="#FFC538" />
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M191.863 73.5315H13.6324V62.4324H191.863V73.5315Z" fill="white">
+		<animate attributeType="XML" attributeName="d" begin="test.mouseover" from="M 191.863 73.531 L 13.632 73.531 L 13.632 62.432 L 191.863 62.432 L 191.863 73.531 Z" to="M 172.997 156.049 L 172.588 66.934 L 172.18 -22.18 L 183.279 -22.231 L 184.096 155.998 Z" dur="0.3s" repeatCount="1" fill="freeze" />
+		<animate attributeType="XML" attributeName="d" begin="test.mouseout" from="M 172.997 156.049 L 172.588 66.934 L 172.18 -22.18 L 183.279 -22.231 L 184.096 155.998 Z" to="M 191.863 73.531 L 13.632 73.531 L 13.632 62.432 L 191.863 62.432 L 191.863 73.531 Z" dur="0.3s" repeatCount="1" fill="freeze" />
+	</path>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M191.863 92.0438H13.6324V80.9447H191.863V92.0438Z" fill="white">
+		<animate attributeType="XML" attributeName="d" begin="test.mouseover" from="M 13.632 80.945 L 13.632 92.044 L 191.863 92.044 L 191.863 92.044 L 191.863 80.945 L 13.632 80.945" to="M 31.219 -5.577 L 31.375 172.653 L 25.826 172.658 L 20.276 172.663 L 20.12 -5.567 L 31.219 -5.577" dur="0.3s" repeatCount="1" fill="freeze" />
+		<animate attributeType="XML" attributeName="d" begin="test.mouseout" from="M 31.219 -5.577 L 31.375 172.653 L 25.826 172.658 L 20.276 172.663 L 20.12 -5.567 L 31.219 -5.577" to="M 13.632 80.945 L 13.632 92.044 L 191.863 92.044 L 191.863 92.044 L 191.863 80.945 L 13.632 80.945" dur="0.3s" repeatCount="1" fill="freeze" />
+	</path>
+	<rect x="41.7568" y="16.6485" width="121.791" height="121.396" fill="#82CA9C" id="test">
+		<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 103 77" to="45 103 77" dur="0.3s" repeatCount="1" begin="test.mouseover" fill="freeze" />
+		<animateTransform attributeName="transform" attributeType="XML" type="rotate" from="45 103 77" to="0 103 77" dur="0.3s" repeatCount="1" begin="test.mouseout" fill="freeze" />
+	</rect>
+</svg>

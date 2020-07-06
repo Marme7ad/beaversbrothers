@@ -1,0 +1,76 @@
+{
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/typescript",
+    "plugin:promise/recommended",
+    "plugin:react/recommended",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:css-modules/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react-hooks", "simple-import-sort", "css-modules"],
+  "rules": {
+    "@typescript-eslint/explicit-function-return-type": ["off"],
+    "complexity": ["warn", { "max": 8 }],
+    "import/dynamic-import-chunkname": ["warn", {}],
+    "import/first": "warn",
+    "import/newline-after-import": "warn",
+    "import/no-duplicates": "warn",
+    "import/no-nodejs-modules": "warn",
+    "import/no-unused-modules": "warn",
+    "import/order": "off",
+    "max-depth": ["warn", 4],
+    "react/jsx-boolean-value": ["warn", "never"],
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": true,
+        "shorthandLast": true,
+        "reservedFirst": true
+      }
+    ],
+    "react/prop-types": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "warn",
+    "simple-import-sort/sort": "warn",
+    "unicorn/consistent-function-scoping": "off",
+    "unicorn/no-abusive-eslint-disable": "off",
+    "unicorn/prevent-abbreviations": "off",
+    "unicorn/filename-case": [
+      "warn",
+      {
+        "cases": {
+          "pascalCase": true,
+          "camelCase": true
+        }
+      }
+    ],
+    "import/no-default-export": "off",
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/display-name": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/ignore": ["react", "classnames"],
+    "import/resolver": {
+      "typescript": {},
+      "webpack": {}
+    }
+  }
+}

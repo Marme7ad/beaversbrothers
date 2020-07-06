@@ -1,0 +1,26 @@
+@custom-media --screen--xs-min screen and (min-width: 1px);
+@custom-media --screen--xs-max screen and (max-width: 767px);
+
+@custom-media --screen--sm-min screen and (min-width: 768px);
+@custom-media --screen--sm-max screen and (min-width: 1023px);
+
+@custom-media --screen--md-min screen and (min-width: 1024px);
+
+
+:root {
+  --rgb--main-green: 0, 128, 102;
+  --rgb--green-light: 2, 159, 175;
+  --rgb--blue: 104, 155, 239;
+  --rgb--blue-dark: 3, 146, 192;
+  --rgb--yellow: 252, 175, 38;
+  --rgb--orange: 255, 123, 27;
+  --color--green: rgb(var(--rgb--main-green));
+  --color--green-light: rgb(var(--rgb--green-light));
+  --color--blue: rgb(var(--rgb--blue));
+  --color--blue-dark: rgb(var(--rgb--blue-dark));
+  --color--yellow: rgb(var(--rgb--yellow));
+  --color--orange: rgb(var(--rgb--orange));
+
+  --font--TT: 'TT Firs Neue', san-serif;
+  --font--IBM: 'IBM Plex Serif', serif;
+}

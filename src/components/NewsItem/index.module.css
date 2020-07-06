@@ -1,0 +1,148 @@
+.NewsItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font--TT);
+
+  &:hover {
+    .NewsItem_Number {
+      transform: scale(0);
+    }
+    .NewsItem_Image {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.NewsItem_circle {
+  margin: 0 5.6vw;
+
+  .NewsItem_Image {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+}
+
+@media (width <= 767px) {
+  .NewsItem_circle {
+    margin: 0 30px;
+  }
+}
+
+.NewsItem_arch {
+  .NewsItem_Image {
+    border-top-left-radius: 500px;
+    border-top-right-radius: 500px;
+    overflow: hidden;
+  }
+}
+
+.NewsItem_small {
+  .NewsItem_Image {
+    height: 15vw;
+  }
+}
+
+@media (width <= 1023px) {
+  .NewsItem_small {
+    .NewsItem_Image {
+      height: 124px;
+    }
+  }
+}
+
+@media (width <= 767px) {
+  .NewsItem_small, .NewsItem_horizontal {
+    .NewsItem_Image {
+      height: 206px;
+    }
+  }
+}
+
+.NewsItem_Image {
+  margin-bottom: 16px;
+  overflow: hidden;
+
+  img {
+    transition: transform 0.25s ease-out;
+  }
+}
+
+.NewsItem_Title {
+  font-weight: bold;
+  color: var(--color--green);
+  margin-bottom: 8px;
+}
+
+.NewsItem_Title__small {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.NewsItem_Title__big {
+  font-size: 24px;
+  line-height: 28px;
+}
+@media (width <= 1023px) {
+  .NewsItem_Title__big {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.NewsItem_Text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.NewsItem_Badges {
+  position: absolute;
+  right: 0;
+}
+
+.NewsItem_Badges_small {
+  top: -8px;
+  right: -8px;
+}
+
+.NewsItem_Number {
+  position: absolute;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  z-index: 0;
+  transition: transform 0.25s ease-out;
+}
+
+@media (width <= 1023px) {
+  .NewsItem_Number {
+    font-size: 80px;
+  }
+}
+
+.NewsItem_NumberWrapper {
+  position: relative;
+}
+
+.NewsItem_Number__left {
+  top: 0;
+  left: 0;
+}
+
+.NewsItem_Number__center {
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Number_Svg {
+  max-width: 200%;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: -1;
+}

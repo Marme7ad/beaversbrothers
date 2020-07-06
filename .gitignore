@@ -1,0 +1,8 @@
+.DS_Store
+/node_modules
+/build
+/dist
+build.tgz
+/.next
+/out
+/.history

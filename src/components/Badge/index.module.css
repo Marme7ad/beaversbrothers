@@ -1,0 +1,42 @@
+.Badge {
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 8px;
+  pointer-events: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Badge_big {
+  width: 56px;
+  height: 56px;
+}
+
+@media (width <= 1023px) {
+  .Badge_big {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.Badge_small {
+  width: 40px;
+  height: 40px;
+}
+
+.Badge_New {
+  background-image: url(/image/badgeNews.svg);
+}
+
+.Badge_Route {
+  background-image: url(/image/badgeRoute.svg);
+}
+
+.Badge_Children {
+  background-image: url(/image/badgeChildren.svg);
+}
+
+.Badge_Basko {
+  background-image: url(/image/badgeBasko.svg);
+}

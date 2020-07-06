@@ -1,0 +1,28 @@
+{
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "files.associations": {
+    "*.css": "postcss"
+  },
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.validate": ["javascript", "typescript", "javascriptreact", "typescriptreact"],
+  "postcss.validate": false,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+  }
+}

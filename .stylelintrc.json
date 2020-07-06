@@ -1,0 +1,182 @@
+{
+  "ignoreFiles": [
+    "**/*.jsx",
+    "**/*.tsx"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-prettier",
+    "stylelint-config-idiomatic-order"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-csstree-validator"
+  ],
+  "rules": {
+    "shorthand-property-no-redundant-values": true,
+    "csstree/validator": {
+      "ignore": [
+        "composes",
+        "font-display"
+      ]
+    },
+    "order/order": [
+      "custom-properties",
+      "declarations",
+      {
+        "type": "rule",
+        "selector": "^&::(before|after)"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:(hover|active|focus)"
+      },
+      {
+        "type": "rule",
+        "selector": "^&:\\w"
+      },
+      {
+        "type": "rule",
+        "selector": "^&\\["
+      },
+      {
+        "type": "rule",
+        "selector": "^\\["
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "xs-min"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "xs-max"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "sm-min"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "sm-only"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "xs-max"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "sm-max"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "md-min"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "md-only"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "md-max"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "lg-min"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "lg-only"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "lg-max"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "xl-min"
+      },
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      {
+        "type": "rule",
+        "selector": "^&_"
+      },
+      {
+        "type": "rule",
+        "selector": "^."
+      }
+    ],
+    "rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested"
+        ]
+      }
+    ],
+    "at-rule-empty-line-before": [
+      "always",
+      {
+        "except": [
+          "first-nested"
+        ],
+        "ignoreAtRules": [
+          "import",
+          "custom-media"
+        ]
+      }
+    ],
+    "no-descending-specificity": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "global",
+          "local"
+        ]
+      }
+    ],
+    "property-no-unknown": [
+      true,
+      {
+        "ignoreProperties": [
+          "composes",
+          "compose-with"
+        ]
+      }
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignoreTypes": [
+          "axis",
+          "grid",
+          "tickLabels"
+        ]
+      }
+    ],
+    "selector-type-case": [
+      "lower",
+      {
+        "ignoreTypes": [
+          "tickLabels"
+        ]
+      }
+    ]
+  }
+}
